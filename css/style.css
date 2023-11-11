@@ -1,0 +1,620 @@
+.header {
+    width: 100%;
+    background-color: black;
+    height: 17vh;
+}
+.header_inner {
+    width: 77%;
+    background-color: black;
+
+    height: 15vh;
+    margin: 0 auto;
+    position: relative;
+}
+.top_menu {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.top_menu_l {
+    position: absolute;
+    left: 0;
+}
+.top_menu_l a li {
+    float: left;
+    margin-right: 20px;
+    color: aliceblue;
+}
+.top_menu_r {
+    position: absolute;
+    left: 0;
+}
+.logo {
+    margin: 20px auto;
+    padding-top: 20px;
+    width: 500px;
+    position: static;
+    padding-left: 400px;
+}
+.logo img {
+    width: 30%;
+}
+.nav {
+    width: 100%;
+    position: absolute;
+
+    height: 7vh;
+    background-color: black;
+
+    bottom: 0;
+}
+.nav ul li {
+    width: 16.66666%;
+    /* border: 1px solid #665b5b; */
+    box-sizing: border-box;
+    float: left;
+    line-height: 6vh;
+    text-align: center;
+    color: aliceblue;
+}
+.nav ul li ::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu {
+    position: relative;
+}
+.sub_menu {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(117, 56, 104);
+    display: none;
+}
+.sub_menu.active {
+    opacity: 1;
+    height: 60px;
+}
+.sub_menu li a {
+    background-color: rgb(55, 73, 56);
+    display: block;
+    color: #555;
+}
+.sub_menu li a:hover {
+    background-color: rgb(4, 15, 15);
+    display: block;
+    color: #a79696;
+}
+.main_banner {
+    background-color: rgb(126, 102, 71);
+    overflow: hidden;
+    height: 70vh;
+    width: 100%;
+}
+.main_banner ul li:nth-child(1) img {
+    transform: translate(0px, -150px);
+}
+/* .main_banner ul li:nth-child(2) img{
+    transform: translate(0px, -150px);
+} */
+.container {
+    width: 5760px;
+    height: 100%;
+}
+.slide {
+    width: 1920px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+}
+.slide h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding-bottom: 10vh;
+
+    color: whitesmoke;
+    font-size: 53px;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+}
+.slide p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding-top: 10vh;
+    color: whitesmoke;
+    font-size: 23px;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+}
+.category {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    margin: 50px;
+}
+/*.category h2:hover {
+     마우스올렸을 때 디자인 
+    width: 50%;
+    height: 10px;
+    text-align: center; 
+    margin-top: 30px;
+
+    color: #eee;
+    line-height: 40px;
+}*/
+.category_inner {
+    padding: 10px;
+    width: 77%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 40vh;
+    margin: 0 auto;
+    grid-gap: 1%;
+}
+
+.item {
+    background-color: rgb(95, 82, 82);
+    padding: 5%;
+    text-align: center;
+    color: beige;
+    background-size: 100%;
+}
+.item h2 {
+    font-size: 2.8rem;
+    line-height: 6.5rem;
+    font-weight: 600;
+    color: rgb(39, 82, 26);
+}
+
+/* .item h2:hover {
+    padding-top: 10%;
+    font-size: 4rem;
+    line-height: 6.5rem;
+    font-weight: 600;
+} */
+
+.item p:hover {
+    font-size: 2rem;
+    line-height: 8rem;
+}
+.item:hover {
+    background-size: 100%;
+    background-position: center;
+}
+.item button {
+    width: 200px;
+    height: 70px;
+    margin-left: 220px;
+    margin-top: 35px;
+    background-color: aliceblue;
+    color: #100f0f;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+    display: none;
+}
+/* .item button:hover {
+    background-color: #002ead;
+    transition: 0.7s;
+} */
+
+.item:hover button {
+    display: block;
+}
+
+.item1 {
+    background-image: url(../images/d.jpeg);
+    border-radius: 7%;
+    overflow: hidden;
+}
+.item2 {
+    background-image: url(../images/swea.jpeg);
+    border-radius: 7%;
+}
+.item3 {
+    background-image: url(../images/camp.jpg);
+    border-radius: 7%;
+}
+.item4 {
+    background-image: url(../images/skateboard-5563464_640.jpg);
+    border-radius: 7%;
+}
+
+.product_title {
+    width: 100%;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+}
+.product_list {
+    width: 81%;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    height: 130vh;
+}
+.product {
+    width: 23.42%;
+    overflow: hidden;
+    margin: 20px 0.79% 40px 0.79%;
+    height: 50vh;
+    text-align: center;
+}
+.product img {
+    height: 44vh;
+    border-radius: 30px;
+}
+.product h3 {
+    text-align: center;
+}
+.product p {
+    text-align: center;
+    color: brown;
+}
+
+.notice {
+    width: 100%;
+}
+.product_wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.reveal {
+    transform: translateY(400px);
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.reveal_cat {
+    transform: translateY(400px);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.reveal_cat.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.site_add {
+    width: 100%;
+    background-image: url(../images/2016913960_filipendula-ulmaria-1526400_1920.jpg);
+    height: 28vh;
+    padding-top: 70px;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+.site_add .site_add_contents {
+    width: 82%;
+    padding: 40px 0 40px 0;
+    margin: 0 auto;
+    background-color: rgb(40, 40, 40, 0.3);
+    text-align: center;
+    color: aliceblue;
+}
+.site_add .site_add_contents h2 {
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 600;
+    padding: 20px 0 20px 0;
+}
+.site_add .site_add_contents p {
+    font-size: 1.5rem;
+}
+.site_add .site_add_contents button {
+    width: 300px;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    height: 60px;
+    background-color: rgb(40, 40, 40, 0.3);
+}
+.custom_area {
+    width: 77%;
+    height: 27vh;
+    /* background-color: rgb(209, 206, 206); */
+    border-radius: 30px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    padding-top: 5vh;
+}
+.custom_area h4 {
+    font-size: 2rem;
+    color: #111011;
+    padding-bottom: 2.2vh;
+}
+h4 span {
+    font-size: 1.4rem;
+    color: #111011;
+}
+.notice_t {
+    width: 33.3%;
+    background-color: beige;
+}
+.customer {
+    width: 33.3%;
+    background-color: beige;
+}
+.qna {
+    width: 33.3%;
+    background-color: beige;
+}
+.notice_ul {
+    position: relative;
+}
+.notice_ul_left {
+    position: absolute;
+
+    left: 0;
+}
+
+.notice_ul_right {
+    position: absolute;
+    right: 0;
+}
+.t_num,
+.online_contact {
+    width: 100%;
+    height: 52px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 52px;
+    margin: 6px 0;
+}
+
+.business_info {
+    width: 100%;
+    height: 40vh;
+    padding: 5vh 0;
+    background-color: #333;
+}
+.business_info_title h3 {
+    font-size: 1.7rem;
+    color: #bbb;
+    text-align: center;
+}
+.business_info_title h3 span {
+    font-size: 1rem;
+    color: #aaa;
+    text-align: center;
+}
+.business_info_itemwrap {
+    width: 77%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+    gap: 1%;
+    margin: 0 auto;
+}
+.business_info_item {
+    width: 32%;
+    height: 20vh;
+    background-color: #1b4d28;
+    padding: 5vh 3vh;
+    text-align: center;
+    transform: translateY(400px);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.business_info_item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.business_info_item:nth-child(3) {
+    transition-delay: 0.4s;
+}
+.business_info_item:hover {
+    /* 마우스올렸을 때 디자인 */
+    width: 32%;
+    height: 20vh;
+    background-color: #1b4d28;
+    padding: 5vh 3vh;
+    text-align: center;
+    color: #eee;
+}
+.business_info_item h4 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+.business_info_item h4:hover {
+    font-size: 3rem;
+    text-align: center;
+}
+.business_info_item p {
+    font-size: 1.7rem;
+    text-align: center;
+}
+.business_info_item img {
+    width: 20%;
+}
+.business_info_item.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.contact_us {
+    width: 100%;
+    padding: 5vh 0;
+    height: 80vh;
+    background-image: url(../images/hhhhhh.jpeg);
+    background-size: cover;
+    margin: 50px;
+}
+
+.contact_us_wrap {
+    overflow: hidden;
+}
+.contact_us_txt {
+    width: 77%;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+}
+.contact_us_txt h2 {
+    font-size: 3rem;
+    font-weight: 1000;
+    color: black;
+    padding-top: 150px;
+}
+.contact_us_txt h5 {
+    font-size: 3rem;
+    color: black;
+    font-weight: 1000;
+
+    line-height: 4rem;
+}
+.contact_us_txt p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: black;
+    padding-top: 20px;
+}
+.recommend_list {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+/* .recommend_list {
+    width: 23.42%;
+    overflow: hidden;
+    margin: 20px;
+    height: 50vh;
+    text-align: center;
+} */
+
+.recommend_list_t {
+    width: 100%;
+    height: 7vh;
+    padding: 5vh;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.recommend_cell {
+    width: 77%;
+    margin: 150px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 90vh;
+}
+
+.re_li_cell p {
+    padding: 2vh;
+}
+.re_li_cell img {
+    width: 100%;
+
+    height: 60vh;
+    padding: 10px;
+}
+
+.re_li_cell {
+    background-color: white;
+    width: 27%;
+    height: 60vh;
+    overflow: hidden;
+    text-align: center;
+    transform: translateY(400px);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.re_li_cell.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.re_li_cell:nth-child(4) {
+    transition-delay: 0.2s;
+}
+.re_li_cell:nth-child(7) {
+    transition-delay: 0.4s;
+}
+
+.footer {
+    width: 100%;
+    height: 38vh;
+    background-color: #333;
+}
+.footer_terms {
+    color: #aaa;
+
+    width: 77%;
+    margin: 0 auto;
+}
+.footer_terms > ul > li {
+    font-size: 0.888rem;
+    float: left;
+    margin: 10px 10px;
+}
+.footer_info {
+    color: #aaa;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 77%;
+    margin: 0 auto;
+}
+.info_box {
+    width: 270px;
+    float: left;
+    height: 240px;
+}
+.info_box p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.footer_terms > ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.info_box p {
+    line-height: 1.2rem;
+}
+.footer_copyright p {
+    color: #bbb;
+}
+.footer_copyright_wrap {
+    width: 77%;
+    margin: 0 auto;
+    height: 6vh;
+}
+.footer_copyright_copyright {
+    /* padding-top: 50px; */
+    float: left;
+    width: 77%;
+}
+.footer_copyright_sns {
+    float: right;
+    width: 23%;
+}
+.footer_copyright_sns img {
+    width: 15%;
+    color: #bbb;
+}
+
+body {
+    min-height: 100vh; /* 최소 높이를 지정 */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; /* 최소 높이 하단에서 자동으로 뻗어나가도록 설정 */
+}
