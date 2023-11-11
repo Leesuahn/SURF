@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta property="og:url" content="https://redkiwiapp.com" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RedKiwi, YouTube-based English Trainer" />
+<meta property="og:description" content="How could you speak English if you cannot understand it? It's time to improve your English listening skills! Try RedKiwi right now :)" />
+<meta property="og:image" content="redkiwi.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수안 디자인</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/response.css" rel="stylesheet" type="text/css">
+    <script src="js/deafult.js" defer></script>
+
+
+</head>
+<body>
+ <header class="header">
+    <div class="header_inner">
+    <div class="top_menu">
+        <ul class="top_menu_l">
+         
+            <a href=""><li>HOME</li></a>
+            <a href=""><li>로그인</li></a>
+            <a href=""><li>회원가입</li></a>
+        </ul>
+      
+        <ul class="top_menu_r">
+         
+            <a href=""><li><i class="fa-brands fa-facebook"></i></li></a>
+            <a href=""><li><i class="fa-brands fa-google"></i></li></a>
+            <a href=""><li><i class="fa-brands fa-instagram"></i></li></a>
+            <a href=""><li><i class="fa-brands fa-x-twitter"></i></li></a>
+
+        </ul>
+    </div>
+
+    <div class="logo">
+
+    <img src="images/로고.png" alt="f">
+</div>
+
+    <nav class="nav">
+        <ul class="menu">
+           <li>COMPANY
+                <ul class="sub_menu">
+                    <li><a href="#"> com_sub_01</a></li>
+                    <li><a href="#"> com_sub_02</a></li>
+                    <li><a href="#"> com_sub_03</a></li>
+                </ul>
+            </li>
+           <li>BUSINESS
+            <ul class="sub_menu">
+                <li><a href="#"> com_sub_01</a></li>
+                <li><a href="#"> com_sub_02</a></li>
+                <li><a href="#"> com_sub_03</a></li>
+            </ul>
+           </li>
+           <li>PRODUCT
+            <ul class="sub_menu">
+                <li><a href="#"> com_sub_01</a></li>
+                <li><a href="#"> com_sub_02</a></li>
+                <li><a href="#"> com_sub_03</a></li>
+            </ul>
+           </li>
+            <li>ONLINE
+                <ul class="sub_menu">
+                    <li><a href="#"> com_sub_01</a></li>
+                    <li><a href="#"> com_sub_02</a></li>
+                    <li><a href="#"> com_sub_03</a></li>
+                </ul>
+            </li>
+            <li>CUSTOMER
+                <ul class="sub_menu">
+                    <li><a href="#"> com_sub_01</a></li>
+                    <li><a href="#"> com_sub_02</a></li>
+                    <li><a href="#"> com_sub_03</a></li>
+                </ul>
+            </li>
+            <li>SHOP
+                <ul class="sub_menu">
+                    <li><a href="#"> com_sub_01</a></li>
+                    <li><a href="#"> com_sub_02</a></li>
+                    <li><a href="#"> com_sub_03</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    </header>
+     <!-- 이미지 슬라이딩  -->
+    <!-- 마케팅 적으로 매우 중요한 아이캐치 
+        시선을 잡는다. = 스크롤, 클릭
+    사람들을 처음 만나는 회사의 이미지.
+     감동 포인트 -->
+
+    
+
+     <section class="main_banner slides visuals">
+        <ul class="container">
+          <li class="slide">
+              <a href="#">
+                  <img src="images/3333.jpeg" alt="">
+                  <h2>위대한 케미스트리</h2>
+                  <p>가장 혁신적인 고어텍스 소재를 소개합니다.</p>
+                  
+              </a>
+          </li>
+          <li class="slide"> 
+              <a href="#">
+                  <img src="images/ASAS.jpeg" alt="">
+                  <h2>위대한 케미스트리</h2>
+                  <p>가장 혁신적인 고어텍스 소재를 소개합니다.</p>
+
+              </a>
+          </li>
+         
+        </ul>
+    </section>
+
+    <script src="js/jquery-1.12.3.js"></script>
+
+    <!-- <script>
+        let slideContainer = $('.container');
+        let slide = slideContainer.find('.slide');
+        let slideCount = slide.length;
+        let currentIdx = 0;
+
+        function autoSlide() {
+  setInterval(function () {
+    //3초마다 반복수행할 구문 시작
+    nextIdx = (currentIdx + 1) % slideCount;
+    slideContainer.animate({
+      marginLeft: -1920 * nextIdx + 'px'
+    });
+    currentIdx = nextIdx;
+  }, 3000)
+}
+autoSlide();
+</script> -->
+
+<script>
+let slideContainer = $('.main_banner');
+let slide = slideContainer.find('.slide');
+let slideCount = slide.length;
+let currentIdx = 0;
+slide.eq(currentIdx).fadeIn();
+setInterval(showNextSlide, 3000);
+
+function showNextSlide() {
+  let nextIdx = (currentIdx + 1) % slideCount;
+  slide.eq(currentIdx).fadeOut();
+  slide.eq(nextIdx).fadeIn();
+  currentIdx = nextIdx;
+}
+
+
+    </script>
+
+    <section class="category">
+        <div class="category_inner">
+        <div class="item item1 reveal_cat" >
+            <h2>Kids </h2>
+            <button>Shop</button>
+        </div>
+        <div class="item item2 reveal_cat" style="transition-delay: 0.2s;">
+            <h2>Sweatshirts & Hoodie</h2>
+                
+            <button>Shop</button>
+        </div>
+        <div class="item item3 reveal_cat">
+            <h2>Other Accesories </h2>
+       
+            <button>Shop</button>
+        </div>
+        <div class="item item4 reveal_cat" style="transition-delay: 0.2s;">
+            <h2>Pants & leggings</h2>   
+           
+            <button>Shop</button>
+        </div>
+    </div>
+
+        
+    </section>
+
+
+
+
+
+    <section class="product_list">
+        <div class="product_title">
+        <h2>Product List</h2>
+        </div>
+        <div class="product_wrap reveal">
+            <div class="product">
+                <img src="images/arc.jfif" alt="#">
+                
+                
+            </div>
+            <div class="product">
+                <img src="images/10.jpeg" alt="#">
+             
+               
+            </div>
+             <div class="product">
+                <img src="images/2.jpeg" alt="#">
+                
+               
+            </div>
+             <div class="product">
+                 <img src="images/20.jpeg" alt="#">
+              
+                
+             </div>
+            <div class="product">
+                <img src="images/30.webp" alt="#">
+            
+               
+             </div>
+            <div class="product">
+                <img src="images/40.jpeg" alt="#">
+              
+            
+            </div>
+            <div class="product">
+                <img src="images/7.jpeg" alt="#">
+            
+            
+            </div>
+            <div class="product">
+                <img src="images/8.jpeg" alt="#">
+              
+                
+            </div>
+        </div>
+      
+    </div>
+    </section>
+    
+
+<section class="notice">
+    <!-- <div class="site_add">
+<div class="site_add_contents">
+    <h2>이수안 디자인 사이트</h2>
+    <p>010-1234-5678로 전화주시면 최고의 서비스를</p>
+    <button>더보기</button>
+</div>
+    </div> -->
+
+    <!-- <div class="custom_area">
+      
+            <div class="notice_t">
+                <h4>공지사항 <span>Notice</span></h4>
+                <div class="notice_ul">
+                    <ul class="notice_ul_left">
+                        <a href="#"><li class="">앨범의 기능은 무엇임?</li></a>
+                        <a href="#"><li class="">브라우저 테스트??</li></a>
+                        <a href="#"><li class="">스마트 디바이스에서 바로</li></a>
+                    </ul>
+                    
+                    <ul class="notice_ul_right">
+                        <a href="#"><li class="">2023-10-27</li></a>
+                        <a href="#"><li class="">2023-10-17</li></a>
+                        <a href="#"><li class="">2023-10-07</li></a>
+                    </ul>
+                </div>
+
+
+         
+
+
+                
+            </div>
+            <div class="customer">                
+                <h4>고객센터 Customer</h4>
+                <p>AM 09:00 ~ PM06:00</p>
+                <div class="t_num">052-888-3939</div>
+                <div class="online_contact">온라인 문의</div>
+            </div>
+            <div class="qna">
+                <h4>질문과답변 Q&A</h4>
+                <div class="notice_ul">
+                
+                    <ul class="notice_ul_left">
+                        <a href="#"><li class="">앨범의 기능은 무엇임?</li></a>
+                        </ul>
+                    
+                    <ul class="notice_ul_right">
+                        <a href="#"><li class="">2023-10-27</li></a>
+                    </ul>
+                
+                </div>
+            </div>
+
+        </div>
+</section>
+
+    <section class="business_info">
+        <div class="business_info_title">
+            <h3>Business Info<span>icon_banner_02</span></h3>
+        </div>
+        <div class="business_info_itemwrap">
+
+        
+        <div class="business_info_item">
+            <img src="images/icon03.png", alt="#"/>
+            <h4>WEB DESIGN</h4>
+            <p>최신 웹디자인 트렌드로</p>
+        </div>
+        <div class="business_info_item">
+            <img src="images/icon02.png", alt="#"/>
+            <h4>WEB DESIGN</h4>
+            <p>최신 웹디자인 트렌드로</p>
+        </div>
+        <div class="business_info_item">
+            <img src="images/icon03.png", alt="#"/>
+            <h4>WEB DESIGN</h4>
+            <p>최신 웹디자인 트렌드로</p>
+        </div>
+
+        
+        
+    </div> -->
+
+    </section>
+    <section class="contact_us">
+        <div class="contact_us_wrap">
+        <div class = "contact_us_txt reveal_cat" id = "contactUsTxt">
+            
+            <h2>당신의 아웃도어 활동을 함께하는 </h2>
+            <h5>HIKING 컬렉션</h5>
+            <p>hiking 컬렉션 최대 3만원 할인</p>
+</div>
+</div>
+        </section>
+
+        <script>
+
+        // let contactUsTxt = document.getElementById('contactUsTxt');
+
+        // window.addEventListener('scroll', () => {
+        // let value = window.scrollY;
+
+        // text.style.marginTop = value * 10+ 'px';
+        // });
+
+        const element = document.querySelector("div#scroll-box");
+        const output = document.querySelector("p#output");
+
+        element.onscroll = (event) => {
+        output.innerHTML = "Element scroll event fired!";
+        setTimeout(() => {
+        output.innerHTML = "Waiting on scroll events...";
+        }, 1000);
+        };
+
+
+        
+function scrollBanner(config) {
+   thistop = -($('.contact_us_wrap').offset().top-200);
+   scrollPos = $(this).scrollTop()+thistop;
+
+   config.bannerText.css({
+      'margin-top' : -(scrollPos/3) + "px",
+      'opacity' : 1-(scrollPos/300)
+   });
+
+   config.banner.css({
+      'background-position': 'center ' + (-scrollPos/4) + "px"
+   });
+
+}
+
+$(document).ready(function(){
+   
+   $(window).scroll(function() {
+
+      scrollBanner({
+         banner: $('.banner'),
+         bannerText: $('.banner-text')
+      });
+
+   });
+
+});
+        </script>
+       
+       
+        <section class="recommend_list">
+            <div class="recommend_list_t">
+            <h2>Our Sports<span></span></h2>
+        </div>
+        <div class="recommend_cell">       
+            <div class="re_li_cell">
+               
+                <img src="images/climb.jpeg" alt="#">
+               
+            </div>
+            <div class="re_li_cell">
+                
+
+                <img src="images/1-1.jpeg" alt="#">
+              
+            </div>
+            <div class="re_li_cell">
+                
+
+                <img src="images/sssss.jpeg"alt="#">
+               
+            </div>
+            <div class="re_li_cell">
+              
+
+                <img src="images/dddddd.jpeg" alt="#">
+             
+            </div>
+            
+           
+</div>
+</section>
+
+
+    <footer class="footer">
+        <div class="footer_terms">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="v">|</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li>|</li>
+                <li><a href="#">서비스이용약관</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">온라인문의</a></li>
+               
+
+            </ul>
+           
+           
+        </div>
+    <div class="footer_info" >
+        <ul>
+            <li>
+                <div class="info_box">
+                    <p>Information</p>
+                    <p>상호명 : SA</p>
+                    <p>대표자명 : 이수안</p>
+                    <p>사업장 주소 : 울산광역시 중구</p>
+                    <p>전화번호 : 010-1234-5678</p>
+                </div>
+            </li>
+            <li>
+                <div class="info_box">
+                    <p>License</p>
+                    <p>사업자등록번호 : 012-374-56789</p>
+                    
+    
+                </div>
+            </li>
+            <li>
+             
+            </li>
+            <li>
+                <div class="info_box">
+                    <p>Bank Information : 기업은행</p>
+                    <p>예금주 : SA</p>
+                   
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer_copyright" >
+        <div class="footer_copyright_wrap">
+            <div class="footer_copyright_copyright">
+            <p>모든 콘텐츠의 무단복제 및 재판매를 금지합니다.</p>
+            <!-- <p>&copy</p> -->
+            </div>
+            <!-- <div class="footer_copyright_sns">
+                <img src="images/icon01.png">
+                <img src="images/icon02.png">
+                <img src="images/icon03.png">
+               
+            </div>  -->
+        </div>
+    </div>
+   
+</footer>
+
+<script src="script/jquery-1.12.3.js"></script>
+
+
+  <!-- <script>
+    const menuLi = document.querySelectorAll('.menu > li');
+    const subMenu = document.querySelectorAll('.sub_menu');
+
+for(let i = 0; i < menuLi.length; i++){
+   menuLi[i].addEventListener('mouseover', function() {
+      subMenu[i].classList.add('active');
+   });
+}
+
+for(let i = 0; i < menuLi.length; i++){
+   menuLi[i].addEventListener('mouseleave', function() {
+      subMenu[i].classList.remove('active')
+   });
+} -->
+
+
+<script>
+let mainMenu = $('nav>ul> li');
+let subMenu = mainMenu.find('ul');
+mainMenu.mouseover(function () {
+  $(this).find('ul').stop().slideDown();
+}).mouseout(function () {
+  $(this).find('ul').stop().slideUp();
+});
+
+  </script>
+
+<!-- product_list 병 통째로 올라오는 부분 -->
+
+  <script>
+ window.addEventListener('scroll', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal')
+
+    for(var i=0; i< reveals.length; i++ ){
+
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 250;
+
+        if(revealTop< windowHeight - revealPoint){
+            reveals[i].classList.add('active');
+        }else{
+            reveals[i].classList.remove('active');
+
+        }
+    }
+}
+
+
+  </script>
+<!-- 카테고리용 reveal -->
+<script>
+    window.addEventListener('scroll', revealCat);
+   
+   function revealCat(){
+       var revealsCat = document.querySelectorAll('.reveal_cat')
+   
+       for(var i=0; i< revealsCat.length; i++ ){
+   
+           var windowHeight = window.innerHeight;
+           var revealCatTop = revealsCat[i].getBoundingClientRect().top;
+           var revealCatPoint = 100;
+   
+           if(revealCatTop< windowHeight - revealCatPoint){
+               revealsCat[i].classList.add('active');
+           }else{
+               revealsCat[i].classList.remove('active');
+   
+           }
+       }
+   }
+   
+   
+     </script>
+
+
+<!-- recommend reveal -->
+<script>
+    window.addEventListener('scroll', revealCell);
+   
+   function revealCell(){
+       var revealsCell = document.querySelectorAll('.re_li_cell')
+   
+       for(var i=0; i< revealsCell.length; i++ ){
+   
+           var windowHeight = window.innerHeight;
+           var revealCellTop = revealsCell[i].getBoundingClientRect().top;
+           var revealCellPoint = 50;
+   
+           if(revealCellTop< windowHeight - revealCellPoint){
+               revealsCell[i].classList.add('active');
+           }else{
+               revealsCell[i].classList.remove('active');
+   
+           }
+       }
+   }
+   
+   
+     </script>
+
+     <!-- business info reveal -->
+<script>
+    window.addEventListener('scroll', revealItem);
+   
+   function revealItem(){
+       var revealsItem = document.querySelectorAll('.business_info_item')
+   
+       for(var i=0; i< revealsItem.length; i++ ){
+   
+           var windowHeight = window.innerHeight;
+           var revealItemTop = revealsItem[i].getBoundingClientRect().top;
+           var revealItemPoint = 50;
+   
+           if(revealItemTop< windowHeight - revealItemPoint){
+               revealsItem[i].classList.add('active');
+           }else{
+               revealsItemm[i].classList.remove('active');
+   
+           }
+       }
+   }
+   
+   
+     </script>
+</body>
+</html>
